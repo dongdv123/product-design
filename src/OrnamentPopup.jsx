@@ -10,7 +10,7 @@ const charmList = [
 
 export default function OrnamentPopup() {
   const [open, setOpen] = useState(true);
-  const [title, setTitle] = useState("The Smith Family");
+  const [title, setTitle] = useState("demo");
   const [dropped, setDropped] = useState([]);
   const [draggedCharm, setDraggedCharm] = useState(null); // charm đang được drag trong canvas
   const [isDragging, setIsDragging] = useState(false);
@@ -901,7 +901,7 @@ export default function OrnamentPopup() {
                     id="title"
                     maxLength={maxLen}
                     value={title}
-                    placeholder="The Smith Family"
+                    placeholder="input title"
                     onChange={(e) => setTitle(e.target.value)}
                   />
                   <div className="char-left">
